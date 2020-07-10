@@ -5,8 +5,7 @@
   (if (good-enough? guess x)
       guess
       (sqrt-iter (improve guess x)
-                 x
-                 )))
+      x)))
 
 (define (improve guess x)
   (average guess (/ x guess)))
